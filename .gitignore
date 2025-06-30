@@ -7,8 +7,8 @@ __pycache__/
 .venv/
 
 # Build / dist
-build/
 dist/
+build/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -19,17 +19,13 @@ dist/
 # macOS
 .DS_Store
 
-# Model_weights
-models/*.pth
-models/*.pt
-
-# sample_data
+# Sample data: track only sample files
 data/*
 !data/sample_ecg.csv
 
-# Log
+# Logs
 *.log
 
-# Certification
+# Credentials
 *.key
 *.pem

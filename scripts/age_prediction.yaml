@@ -1,0 +1,23 @@
+# 모델 설정
+n_leads: 1
+n_classes: 1
+
+# 데이터 경로
+input_directory: "/home/wellysis/mount_SJ/Users/SeunghyunPark/mount_RAW/wellysis_10seconds_0102"
+output_directory: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_5_wellysis_ageprediction/results_eachage/age_data_1864_0121"
+#model_path: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_4_model_training/model_result/01_new_models/20250119_0100_singleAgeModel/best_model.pth"
+model_path: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_4_model_training/model_result/2024_1231_2300_continue_best_PROPHECG_SINGLE_AGE/best_model.pth"
+
+# 처리 설정
+setup:
+  batch_size: 512
+  seq_length: 2000
+
+# 모델 파라미터
+module:
+  model:
+    model_name: "PROPHECG_SINGLE_AGE"
+    net_filter_size: [32, 64, 128, 256, 512] # filter size in resnet layers 
+    net_seq_length: [2000, 400, 80, 16, 4] # number of samples per resnet layer
+    kernel_size: 7 # kernel size in convolutional layers. 500hz일때 17(34ms)을 200hz일때 7(35ms)로 시작하기.
+    dropout_rate: 0.4
