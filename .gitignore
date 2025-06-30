@@ -19,9 +19,6 @@ build/
 # macOS
 .DS_Store
 
-# Sample data: track only sample files
-data/*
-!data/sample_ecg.csv
 
 # Logs
 *.log
