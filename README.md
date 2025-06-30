@@ -39,4 +39,4 @@ During training, true ages were divided by 5 to stabilize regression targets; at
 
 ## References
 - Lima _et al._, _Nature Communications_ 12, 5117 (2021). https://doi.org/10.1038/s41467-021-25351-7
-- Cho _et al._, “Artificial intelligence–derived electrocardiographic aging and risk of atrial fibrillation: a multi-national study,” _European Heart Journal_ 46(9):839–852 (2025).
+- Cho _et al._, _European Heart Journal_ 46(9):839–852 (2025). https://doi.org/10.1093/eurheartj/ehae790
