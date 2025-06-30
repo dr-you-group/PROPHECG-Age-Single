@@ -1,19 +1,18 @@
-# 모델 설정
+# model setting
 n_leads: 1
 n_classes: 1
 
-# 데이터 경로
-input_directory: "/home/wellysis/mount_SJ/Users/SeunghyunPark/mount_RAW/wellysis_10seconds_0102"
-output_directory: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_5_wellysis_ageprediction/results_eachage/age_data_1864_0121"
-#model_path: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_4_model_training/model_result/01_new_models/20250119_0100_singleAgeModel/best_model.pth"
-model_path: "/home/wellysis/seunghyun/electrophysiology_ECG/PROPHECG_AGE/flow_4_model_training/model_result/2024_1231_2300_continue_best_PROPHECG_SINGLE_AGE/best_model.pth"
+# data path
+input_directory: ""
+output_directory: ""
+model_path: ""
 
-# 처리 설정
+# setting
 setup:
   batch_size: 512
   seq_length: 2000
 
-# 모델 파라미터
+# parameters
 module:
   model:
     model_name: "PROPHECG_SINGLE_AGE"
