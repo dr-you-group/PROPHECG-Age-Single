@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+.venv/
+
+# Build / dist
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# macOS
+.DS_Store
+
+# 모델 가중치
+models/*.pth
+models/*.pt
+
+# 샘플 데이터: 특정 파일만 추적
+data/*
+!data/sample_ecg.csv
+
+# 로그
+*.log
+
+# 인증 파일
+*.key
+*.pem
