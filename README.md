@@ -32,8 +32,11 @@ PROPHECG-Age-Single/
 - **Input shape**: `(2000, 1)`
 
 ## Model Architecture
-Our PROPHECG-Age Single model is an adaptation of the ResNet1D design introduced by Cho _et al._ (2025), which itself builds on the original 1D ResNet framework from Lima _et al._ (2021). We modified the block depths and sampling strides to optimize age prediction from single‑lead ECG inputs, with a final regression layer for direct age estimation.
+Our PROPHECG-Age Single model is an adaptation of the ResNet1D design introduced by Cho _et al._ (2025), which itself builds on the original 1D ResNet framework from Lima _et al._ (2021). We modified the block depths and sampling strides to optimize age prediction from single-lead ECG inputs, with a final regression layer for direct age estimation.
+
+**Output Scaling**
+During training, true ages were divided by 5 to stabilize regression targets; at inference time, the model’s raw output is multiplied by 5 to recover the age in years.
 
 ## References
 - Lima _et al._, _Nature Communications_ 12, 5117 (2021). https://doi.org/10.1038/s41467-021-25351-7
-- Cho _et al._, _European Heart Journal_ 46(9):839–852 (2025). https://doi.org/10.1093/eurheartj/ehae790
+- Cho _et al._, “Artificial intelligence–derived electrocardiographic aging and risk of atrial fibrillation: a multi-national study,” _European Heart Journal_ 46(9):839–852 (2025).
