@@ -19,17 +19,17 @@ dist/
 # macOS
 .DS_Store
 
-# 모델 가중치
+# Model_weights
 models/*.pth
 models/*.pt
 
-# 샘플 데이터: 특정 파일만 추적
+# sample_data
 data/*
 !data/sample_ecg.csv
 
-# 로그
+# Log
 *.log
 
-# 인증 파일
+# Certification
 *.key
 *.pem
