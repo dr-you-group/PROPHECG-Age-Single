@@ -13,6 +13,9 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
+# VSCode settings
+.vscode/
+
 # IDE
 .vscode/
 
