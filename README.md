@@ -32,7 +32,7 @@ PROPHECG-Age-Single/
 - **Input shape**: `(2000, 1)`
 
 ## Model Architecture
-Based on the 1D ResNet architecture from Lima _et al._, _Nature Communications_ 12, 5117 (2021). The final output layer performs regression to predict normalized age (scaled by a factor of 5).
+Our PROPHECG-Age Single model is an adaptation of the ResNet1D design introduced by Cho _et al._ (2025), which itself builds on the original 1D ResNet framework from Lima _et al._ (2021). We modified the block depths and sampling strides to optimize age prediction from single‑lead ECG inputs, with a final regression layer for direct age estimation.
 
 ## References
 - Lima _et al._, _Nature Communications_ 12, 5117 (2021). https://doi.org/10.1038/s41467-021-25351-7
