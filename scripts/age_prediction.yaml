@@ -1,0 +1,22 @@
+# model setting
+n_leads: 1
+n_classes: 1
+
+# data path
+input_directory: ""
+output_directory: ""
+model_path: ""
+
+# setting
+setup:
+  batch_size: 512
+  seq_length: 2000
+
+# parameters
+module:
+  model:
+    model_name: "PROPHECG_SINGLE_AGE"
+    net_filter_size: [32, 64, 128, 256, 512] # filter size in resnet layers 
+    net_seq_length: [2000, 400, 80, 16, 4] # number of samples per resnet layer
+    kernel_size: 7 # kernel size in convolutional layers. 500hz일때 17(34ms)을 200hz일때 7(35ms)로 시작하기.
+    dropout_rate: 0.4

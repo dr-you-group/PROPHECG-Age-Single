@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+.venv/
+
+# Build / dist
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# IDE
+.vscode/
+
+# macOS
+.DS_Store
+
+
+# Logs
+*.log
+
+# Credentials
+*.key
+*.pem
+
+# Model weights
+*.pt
+*.pth
+*.h5
