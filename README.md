@@ -1,8 +1,12 @@
 # PROPHECG-Age Single
+This paper has been accepted for publication in **_npj Digital Medicine_** (2026).
 A single-lead ECG age prediction model built on a 1D ResNet-based convolutional neural network.
 
 ## Overview
-This repository provides all the code, data samples, and documentation needed to train, evaluate, and run inference with the PROPHECG-Age Single model. The model predicts a subject’s physiological age from raw single-lead ECG waveforms sampled at 200 Hz over 10 seconds.
+This repository provides the official implementation of **PROPHECG-Age-Single**. It includes all code, data samples, and documentation needed to train, evaluate, and run inference.
+The model predicts a subject’s physiological age from raw wearable single-lead ECG waveforms sampled at 200 Hz over 10 seconds.
+
+**We provide the pre-trained model weights in the `models/` directory**, allowing researchers to reproduce our results or use the model for transfer learning.
 
 ## Repository Structure
 ```text
